@@ -26,7 +26,7 @@ const Index = () => {
       <header className="border-b">
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between" aria-label="Navegação principal">
           <div className="flex items-center gap-3">
-            <img src="/placeholder.svg" alt="Logomarca KABJ Guardian (verde e vermelho)" className="h-9 w-9" />
+            <img src="/lovable-uploads/bc7c2c62-4baa-4f4c-b65e-9f619ed62561.png" alt="Logomarca KABJ Guard (escudo vermelho e caminhão verde)" className="h-9 w-9" />
             <span className="font-semibold">KABJ Guardian</span>
           </div>
           <ul className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
@@ -44,6 +44,15 @@ const Index = () => {
 
       <main id="conteudo">
         <section className="relative overflow-hidden">
+          <div className="pointer-events-none absolute inset-0 -z-10">
+            <div
+              className="h-full w-full"
+              style={{
+                background:
+                  "radial-gradient(1200px 600px at 0% 0%, hsl(var(--primary) / 0.15), transparent 60%), radial-gradient(1200px 600px at 100% 100%, hsl(var(--destructive) / 0.15), transparent 60%)",
+              }}
+            />
+          </div>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <article>
@@ -71,7 +80,7 @@ const Index = () => {
 
               <div className="relative">
                 <div className="aspect-[4/3] rounded-xl border bg-muted/40 flex items-center justify-center">
-                  <img src="/placeholder.svg" alt="Dashboard de rastreamento KABJ Guardian" className="h-32 opacity-80" loading="lazy" />
+                  <img src="/lovable-uploads/bc7c2c62-4baa-4f4c-b65e-9f619ed62561.png" alt="Logo KABJ Guard em escudo vermelho e verde" className="h-32 opacity-90" loading="lazy" />
                 </div>
               </div>
             </div>
