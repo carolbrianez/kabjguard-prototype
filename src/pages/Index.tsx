@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Shield, Truck, LineChart, Headset, Cpu, CheckCircle2, MapPin, Phone, Mail } from "lucide-react";
+import logoPrimary from "@/assets/logo-kabj-guard-horizontal.png";
+import logoEmblem from "@/assets/logo-kabj-guard-emblem.png";
 
 const Index = () => {
   const jsonLd = {
@@ -26,7 +28,7 @@ const Index = () => {
       <header className="border-b">
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between" aria-label="Navegação principal">
           <div className="flex items-center gap-3">
-            <img src="/lovable-uploads/bc7c2c62-4baa-4f4c-b65e-9f619ed62561.png" alt="Logomarca KABJ Guard (escudo vermelho e caminhão verde)" className="h-9 w-9" />
+            <img src={logoPrimary} alt="Logomarca KABJ Guard (escudo vermelho e caminhão verde)" className="h-9" />
             <span className="font-semibold">KABJ Guardian</span>
           </div>
           <ul className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
@@ -80,7 +82,7 @@ const Index = () => {
 
               <div className="relative">
                 <div className="aspect-[4/3] rounded-xl border bg-muted/40 flex items-center justify-center">
-                  <img src="/lovable-uploads/bc7c2c62-4baa-4f4c-b65e-9f619ed62561.png" alt="Logo KABJ Guard em escudo vermelho e verde" className="h-32 opacity-90" loading="lazy" />
+                  <img src={logoEmblem} alt="Logo KABJ Guard em escudo vermelho e verde" className="h-32 opacity-90" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -218,10 +220,34 @@ const Index = () => {
               <p className="text-muted-foreground">Profissionais responsáveis por cada área.</p>
             </header>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
-              <Card><CardHeader><CardTitle>Ana Carolina B. Rodrigues</CardTitle></CardHeader><CardContent className="text-muted-foreground">Contabilidade</CardContent></Card>
-              <Card><CardHeader><CardTitle>Ana Karolina Ferraro</CardTitle></CardHeader><CardContent className="text-muted-foreground">Jurídico</CardContent></Card>
-              <Card><CardHeader><CardTitle>Gabriel M. Nakashima</CardTitle></CardHeader><CardContent className="text-muted-foreground">Desenvolvimento</CardContent></Card>
-              <Card><CardHeader><CardTitle>João Victor S. Marcolino</CardTitle></CardHeader><CardContent className="text-muted-foreground">Suporte Técnico</CardContent></Card>
+              <Card>
+                <CardHeader className="flex flex-col items-center">
+                  <img src="/lovable-uploads/43bc3e82-bfeb-477c-98d0-b756e211d947.png" alt="João Sartori - KABJ Guard" className="h-40 w-40 rounded-full object-cover border" loading="lazy" />
+                  <CardTitle className="mt-3 text-base text-center">João Sartori</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground text-center">Suporte Técnico</CardContent>
+              </Card>
+              <Card>
+                <CardHeader className="flex flex-col items-center">
+                  <img src="/lovable-uploads/f512689a-8da4-4bc2-af21-e8407065d045.png" alt="Ana Karolina - KABJ Guard" className="h-40 w-40 rounded-full object-cover border" loading="lazy" />
+                  <CardTitle className="mt-3 text-base text-center">Ana Karolina</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground text-center">Jurídico</CardContent>
+              </Card>
+              <Card>
+                <CardHeader className="flex flex-col items-center">
+                  <img src="/lovable-uploads/bd272c57-fe67-4f4e-a9dc-e1995844365f.png" alt="Gabriel Nakashima - KABJ Guard" className="h-40 w-40 rounded-full object-cover border" loading="lazy" />
+                  <CardTitle className="mt-3 text-base text-center">Gabriel Nakashima</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground text-center">Desenvolvimento</CardContent>
+              </Card>
+              <Card>
+                <CardHeader className="flex flex-col items-center">
+                  <img src="/lovable-uploads/e1ca01ed-b685-4ddd-9481-68e048276d45.png" alt="Ana Carolina - KABJ Guard" className="h-40 w-40 rounded-full object-cover border" loading="lazy" />
+                  <CardTitle className="mt-3 text-base text-center">Ana Carolina</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground text-center">Contabilidade</CardContent>
+              </Card>
             </div>
           </div>
         </section>
