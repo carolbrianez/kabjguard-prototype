@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Shield, Truck, LineChart, Headset, Cpu, CheckCircle2, MapPin, Phone, Mail } from "lucide-react";
-import logoEmblem from "@/assets/logo-kabj-guard-emblem.png";
+import logoEmblem from "@/assets/kabj-guard-emblem-clean.png";
+import logoHorizontal from "@/assets/kabj-guard-logo-horizontal-clean.png";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Index = () => {
@@ -29,7 +30,6 @@ const Index = () => {
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between" aria-label="Navegação principal">
           <div className="flex items-center gap-3">
             <img src={logoEmblem} alt="Emblema KABJ Guard (escudo com caminhão)" className="h-9 w-auto" />
-            <span className="font-semibold">KABJ Guard</span>
           </div>
           <ul className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
             <li><a href="#beneficios" className="hover:text-foreground transition-colors">Benefícios</a></li>
@@ -85,7 +85,7 @@ const Index = () => {
                   <CarouselContent>
                     <CarouselItem>
                       <div className="aspect-[4/3] rounded-xl border bg-muted/40 flex items-center justify-center">
-                        <img src={logoEmblem} alt="Logotipo KABJ Guard em destaque (escudo com caminhão)" className="h-40 opacity-95" loading="lazy" decoding="async" />
+                        <img src={logoHorizontal} alt="Logo completo KABJ Guard" className="h-40 opacity-95" loading="lazy" decoding="async" />
                       </div>
                     </CarouselItem>
                     <CarouselItem>
