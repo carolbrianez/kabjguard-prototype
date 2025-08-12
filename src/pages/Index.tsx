@@ -10,7 +10,7 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "KABJ Guard",
-    url: typeof window !== "undefined" ? window.location.origin : "https://kabj-guardian.example",
+    url: typeof window !== "undefined" ? window.location.origin : "https://kabj-guard.example",
     logo: "/placeholder.svg",
     address: {
       "@type": "PostalAddress",
@@ -85,7 +85,7 @@ const Index = () => {
                   <CarouselContent>
                     <CarouselItem>
                       <div className="aspect-[4/3] rounded-xl border bg-muted/40 flex items-center justify-center">
-                        <img src={logoEmblem} alt="Logotipo KABJ Guard em destaque (escudo com caminhão)" className="h-40 opacity-95" loading="lazy" decoding="async" />
+                        <img src={logoEmblem} alt="Logotipo KABJ Guard em destaque (escudo com caminhão)" className="h-80 opacity-95" loading="lazy" decoding="async" />
                       </div>
                     </CarouselItem>
                     <CarouselItem>
@@ -199,44 +199,44 @@ const Index = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Start</CardTitle>
+                  <CardTitle>Básico</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-3xl font-bold">R$ 99<span className="text-base font-medium">/mês</span></p>
+                  <p className="text-3xl font-bold">R$ 500<span className="text-base font-medium">/mês</span></p>
                   <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                     <li>Rastreamento em tempo real</li>
                     <li>Alertas básicos</li>
-                    <li>Suporte comercial</li>
+                    <li>Suporte 24h</li>
                   </ul>
-                  <Button className="mt-6 w-full" asChild><a href="mailto:contato@kabjguardian.com">Assinar</a></Button>
+                  <Button className="mt-6 w-full" asChild><a href="mailto:contato@kabjguard.com">Assinar</a></Button>
                 </CardContent>
               </Card>
               <Card className="border-primary/40">
                 <CardHeader>
-                  <CardTitle>Pro</CardTitle>
+                  <CardTitle>Intermediário</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-3xl font-bold">R$ 149<span className="text-base font-medium">/mês</span></p>
+                  <p className="text-3xl font-bold">R$ 750<span className="text-base font-medium">/mês</span></p>
                   <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                     <li>Relatórios inteligentes</li>
-                    <li>Alertas avançados</li>
+                    <li>Gerenciamento de risco</li>
                     <li>Suporte 24h</li>
                   </ul>
-                  <Button className="mt-6 w-full" asChild><a href="mailto:contato@kabjguardian.com">Assinar</a></Button>
+                  <Button className="mt-6 w-full" asChild><a href="mailto:contato@kabjguard.com">Assinar</a></Button>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Enterprise</CardTitle>
+                  <CardTitle>Avançado</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-3xl font-bold">Sob consulta</p>
                   <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                     <li>Integrações personalizadas</li>
-                    <li>SLAs e treinamento</li>
-                    <li>Time dedicado</li>
+                    <li>Telemetria completa</li>
+                    <li>Suporte 24h</li>
                   </ul>
-                  <Button className="mt-6 w-full" asChild><a href="mailto:contato@kabjguardian.com">Falar com vendas</a></Button>
+                  <Button className="mt-6 w-full" asChild><a href="mailto:contato@kabjguard.com">Falar com vendas</a></Button>
                 </CardContent>
               </Card>
             </div>
@@ -252,32 +252,33 @@ const Index = () => {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
               <Card>
                 <CardHeader className="flex flex-col items-center">
-                  <img src="/lovable-uploads/43bc3e82-bfeb-477c-98d0-b756e211d947.png" alt="João Sartori - KABJ Guard" className="h-40 w-40 rounded-full object-cover border" loading="lazy" />
+                  <img src="/lovable-uploads/43bc3e82-bfeb-477c-98d0-b756e211d947.png" alt="João Sartori - KABJ Guard" className="h-100 w-40 rounded-full object-cover border" loading="lazy" />
                   <CardTitle className="mt-3 text-base text-center">João Sartori</CardTitle>
                 </CardHeader>
                 <CardContent className="text-muted-foreground text-center">Suporte Técnico</CardContent>
               </Card>
               <Card>
                 <CardHeader className="flex flex-col items-center">
-                  <img src="/lovable-uploads/f512689a-8da4-4bc2-af21-e8407065d045.png" alt="Ana Karolina - KABJ Guard" className="h-40 w-40 rounded-full object-cover border" loading="lazy" />
+                  <img src="/lovable-uploads/f512689a-8da4-4bc2-af21-e8407065d045.png" alt="Ana Karolina - KABJ Guard" className="h-50 w-40 rounded-full object-cover border" loading="lazy" />
                   <CardTitle className="mt-3 text-base text-center">Ana Karolina</CardTitle>
                 </CardHeader>
                 <CardContent className="text-muted-foreground text-center">Jurídico</CardContent>
               </Card>
               <Card>
                 <CardHeader className="flex flex-col items-center">
-                  <img src="/lovable-uploads/bd272c57-fe67-4f4e-a9dc-e1995844365f.png" alt="Gabriel Nakashima - KABJ Guard" className="h-40 w-40 rounded-full object-cover border" loading="lazy" />
-                  <CardTitle className="mt-3 text-base text-center">Gabriel Nakashima</CardTitle>
-                </CardHeader>
-                <CardContent className="text-muted-foreground text-center">Desenvolvimento</CardContent>
-              </Card>
-              <Card>
-                <CardHeader className="flex flex-col items-center">
-                  <img src="/lovable-uploads/e1ca01ed-b685-4ddd-9481-68e048276d45.png" alt="Ana Carolina - KABJ Guard" className="h-40 w-40 rounded-full object-cover border" loading="lazy" />
+                  <img src="/lovable-uploads/e1ca01ed-b685-4ddd-9481-68e048276d45.png" alt="Ana Carolina - KABJ Guard" className="h-100 w-40 rounded-full object-cover border" loading="lazy" />
                   <CardTitle className="mt-3 text-base text-center">Ana Carolina</CardTitle>
                 </CardHeader>
                 <CardContent className="text-muted-foreground text-center">Contabilidade</CardContent>
               </Card>
+              <Card>
+                <CardHeader className="flex flex-col items-center">
+                  <img src="/lovable-uploads/bd272c57-fe67-4f4e-a9dc-e1995844365f.png" alt="Gabriel Nakashima - KABJ Guard" className="h-70 w-40 rounded-full object-cover border" loading="lazy" />
+                  <CardTitle className="mt-3 text-base text-center">Gabriel Nakashima</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground text-center">Desenvolvimento</CardContent>
+              </Card>
+              
             </div>
           </div>
         </section>
@@ -317,7 +318,7 @@ const Index = () => {
               </Card>
               <Card>
                 <CardHeader className="flex flex-row items-center gap-2"><Mail className="h-4 w-4 text-primary" /><CardTitle className="text-base">E-mail</CardTitle></CardHeader>
-                <CardContent className="text-muted-foreground">contato@kabjguardian.com</CardContent>
+                <CardContent className="text-muted-foreground">contato@kabjguard.com</CardContent>
               </Card>
               <Card>
                 <CardHeader className="flex flex-row items-center gap-2"><MapPin className="h-4 w-4 text-primary" /><CardTitle className="text-base">Localização</CardTitle></CardHeader>
@@ -325,7 +326,7 @@ const Index = () => {
               </Card>
             </div>
             <div className="mt-8 text-center">
-              <Button asChild size="lg"><a href="mailto:contato@kabjguardian.com">Enviar mensagem</a></Button>
+              <Button asChild size="lg"><a href="mailto:contato@kabjguard.com">Enviar mensagem</a></Button>
             </div>
           </div>
         </section>
