@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Shield, Truck, LineChart, Headset, Cpu, CheckCircle2, MapPin, Phone, Mail } from "lucide-react";
-import logoPrimary from "@/assets/logo-kabj-guard-horizontal.png";
 import logoEmblem from "@/assets/logo-kabj-guard-emblem.png";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Index = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "KABJ Guardian",
+    name: "KABJ Guard",
     url: typeof window !== "undefined" ? window.location.origin : "https://kabj-guardian.example",
     logo: "/placeholder.svg",
     address: {
@@ -28,8 +28,8 @@ const Index = () => {
       <header className="border-b">
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between" aria-label="Navegação principal">
           <div className="flex items-center gap-3">
-            <img src={logoPrimary} alt="Logomarca KABJ Guard (escudo vermelho e caminhão verde)" className="h-9" />
-            <span className="font-semibold">KABJ Guardian</span>
+            <img src={logoEmblem} alt="Emblema KABJ Guard (escudo com caminhão)" className="h-9 w-auto" />
+            <span className="font-semibold">KABJ Guard</span>
           </div>
           <ul className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
             <li><a href="#beneficios" className="hover:text-foreground transition-colors">Benefícios</a></li>
@@ -59,7 +59,7 @@ const Index = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <article>
                 <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
-                  Rastreamento de Frotas KABJ Guardian
+                  Rastreamento de Frotas KABJ Guard
                 </h1>
                 <p className="mt-4 text-lg text-muted-foreground">
                   Soluções tecnológicas para monitoramento veicular que protegem motoristas, caminhões e cargas. Suporte 24h, tecnologia própria e análise de dados inteligente.
@@ -81,9 +81,39 @@ const Index = () => {
               </article>
 
               <div className="relative">
-                <div className="aspect-[4/3] rounded-xl border bg-muted/40 flex items-center justify-center">
-                  <img src={logoEmblem} alt="Logo KABJ Guard em escudo vermelho e verde" className="h-32 opacity-90" loading="lazy" />
-                </div>
+                <Carousel className="w-full" aria-label="Carrossel hero">
+                  <CarouselContent>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] rounded-xl border bg-muted/40 flex items-center justify-center">
+                        <img src={logoEmblem} alt="Logotipo KABJ Guard em destaque (escudo com caminhão)" className="h-40 opacity-95" loading="lazy" decoding="async" />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] rounded-xl overflow-hidden border">
+                        <img
+                          src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600"
+                          alt="Frota de caminhões estacionados pronta para operação"
+                          className="h-full w-full object-cover"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] rounded-xl overflow-hidden border">
+                        <img
+                          src="https://images.unsplash.com/photo-1460186136353-977e9d6085a1?q=80&w=1600&auto=format&fit=crop"
+                          alt="Visualização de mapeamento via satélite e cidade vista do alto"
+                          className="h-full w-full object-cover"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="-left-3 top-1/2 -translate-y-1/2 bg-background/70 backdrop-blur-sm" aria-label="Slide anterior" />
+                  <CarouselNext className="-right-3 top-1/2 -translate-y-1/2 bg-background/70 backdrop-blur-sm" aria-label="Próximo slide" />
+                </Carousel>
               </div>
             </div>
           </div>
@@ -303,7 +333,7 @@ const Index = () => {
 
       <footer className="border-t py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} KABJ Guardian. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} KABJ Guard. Todos os direitos reservados.</p>
           <nav className="flex items-center gap-4">
             <a href="#planos" className="hover:text-foreground">Planos</a>
             <a href="#faq" className="hover:text-foreground">FAQ</a>
